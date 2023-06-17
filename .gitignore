@@ -1,4 +1,0 @@
-*.phar
-*.cache
-/vendor/
-/composer.lock
