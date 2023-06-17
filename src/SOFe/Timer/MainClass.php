@@ -11,7 +11,7 @@ use pocketmine\player\Player;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
-use SOFe\Timer\libs\_49243fc171b8c577\SOFe\Zleep\Zleep;
+use SOFe\Timer\libs\_4be245d68119d1a7\SOFe\Zleep\Zleep;
 use WeakMap;
 use function count;
 use function floor;
