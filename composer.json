@@ -1,0 +1,23 @@
+{
+    "name": "sof3/timer-pmmp",
+    "license": "Apache-2.0",
+    "type": "pocketmine-plugin",
+    "scripts": {
+        "fmt": "vendor/bin/php-cs-fixer fix",
+        "analyze": "vendor/bin/phpstan",
+        "build": "php -dphar.readonly=0 vendor/bin/pharynx -i=. -c -p=Timer.phar"
+    },
+    "require": {
+        "pocketmine/pocketmine-mp": "^5.0.0",
+        "sof3/await-generator": "^3.5.2",
+        "sof3/zleep": "^0.1.0"
+    },
+    "require-dev": {
+        "sof3/pharynx": "^0.3.0",
+        "friendsofphp/php-cs-fixer": "^3.4",
+        "phpstan/phpstan": "^1.2"
+    },
+    "autoload": {
+        "classmap": ["src"]
+    }
+}

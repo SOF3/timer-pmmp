@@ -1,0 +1,14 @@
+name: Timer
+version: 0.1.0
+main: SOFe\Timer\Main
+author: SOFe
+api: 5.0.0
+commands:
+  timer:
+    permission: timer.timer
+    description: Start a personal timer
+    usage: /timer (start|stop|reset|show|hide) ...
+permissions:
+  timer.timer:
+    description: Perimssion to run /timer
+    default: true
