@@ -56,7 +56,7 @@ final class MainClass extends PluginBase {
 					$session->display = false;
 					break;
 				default:
-					$sender->sendMessage("unknown subcommand \"$subcmd\"");
+					$sender->sendMessage(TextFormat::RED . "Unknown subcommand \"$subcmd\"");
 					return false;
 			}
 		}
