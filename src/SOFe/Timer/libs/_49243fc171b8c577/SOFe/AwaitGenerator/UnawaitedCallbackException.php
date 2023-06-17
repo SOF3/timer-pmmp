@@ -20,11 +20,10 @@
 
 declare(strict_types=1);
 
-namespace SOFe\Timer\libs\_3fcb18254a4967a7\SOFe\AwaitGenerator;
+namespace SOFe\Timer\libs\_49243fc171b8c577\SOFe\AwaitGenerator;
 
-/**
- * @template T
- * @internal
- */
-final class EmptyChannelState{
+class UnawaitedCallbackException extends AwaitException{
+	public function __construct(string $action){
+		parent::__construct("$action is disallowed when Await::RESOLVE or Await::REJECT was yielded but is not awaited through Await::ONCE, Await::ALL or Await::RACE");
+	}
 }

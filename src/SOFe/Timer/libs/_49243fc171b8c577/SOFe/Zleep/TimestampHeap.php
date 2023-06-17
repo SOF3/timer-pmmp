@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SOFe\Timer\libs\_3fcb18254a4967a7\SOFe\Zleep;
+namespace SOFe\Timer\libs\_49243fc171b8c577\SOFe\Zleep;
 
 use Closure;
 use Generator;
@@ -10,7 +10,7 @@ use pocketmine\plugin\Plugin;
 use pocketmine\scheduler\ClosureTask;
 use pocketmine\scheduler\TaskHandler;
 use pocketmine\utils\ReversePriorityQueue;
-use SOFe\Timer\libs\_3fcb18254a4967a7\SOFe\AwaitGenerator\Await;
+use SOFe\Timer\libs\_49243fc171b8c577\SOFe\AwaitGenerator\Await;
 use SplPriorityQueue;
 use function is_finite;
 use function max;

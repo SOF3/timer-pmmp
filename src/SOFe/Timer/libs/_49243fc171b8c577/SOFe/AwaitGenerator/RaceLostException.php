@@ -20,13 +20,24 @@
 
 declare(strict_types=1);
 
-namespace SOFe\Timer\libs\_3fcb18254a4967a7\SOFe\AwaitGenerator;
+namespace SOFe\Timer\libs\_49243fc171b8c577\SOFe\AwaitGenerator;
+
+use Exception;
 
 /**
- * @template T
- * @internal
+ * The exception to throw into loser generators of
+ * a {@link Await::safeRace()}.
+ * 
+ * If your generator has side effects, please consider
+ * handling this exception by taking cancellation in a
+ * `finally` block. Otherwise, if you prefer the `catch`
+ * block, please re-throw this exception at the end.
+ * (Please refer to {@link AwaitTest::testSafeRaceCancel()}.)
+ * 
+ * NOTICE: it would not cause a crash even though your
+ * generator did not catch it.
  */
-final class ReceivingChannelState{
-	/** @var list<Closure(T): void> */
-	public array $queue = [];
+final class RaceLostException extends Exception{
+	public function __construct() {
+	}
 }

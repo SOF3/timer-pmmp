@@ -20,22 +20,13 @@
 
 declare(strict_types=1);
 
-namespace SOFe\Timer\libs\_3fcb18254a4967a7\SOFe\AwaitGenerator;
-
-use Exception;
+namespace SOFe\Timer\libs\_49243fc171b8c577\SOFe\AwaitGenerator;
 
 /**
- * The default exception to throw into an async iterator
- * when `Traverser::interrupt()` is called.
+ * @template T
+ * @internal
  */
-final class InterruptException extends Exception{
-	private static $instance;
-
-	public static function get() : self {
-		self::$instance = self::$instance ?? new self;
-		return self::$instance;
-	}
-
-	private function __construct() {
-	}
+final class ReceivingChannelState{
+	/** @var list<Closure(T): void> */
+	public array $queue = [];
 }

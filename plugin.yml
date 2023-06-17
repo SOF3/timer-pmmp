@@ -1,6 +1,6 @@
 name: Timer
 version: 0.1.0
-main: SOFe\Timer\Main
+main: SOFe\Timer\MainClass
 author: SOFe
 api: 5.0.0
 commands:
