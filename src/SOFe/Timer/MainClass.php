@@ -11,7 +11,8 @@ use pocketmine\player\Player;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
-use SOFe\Timer\libs\_4be245d68119d1a7\SOFe\Zleep\Zleep;
+use SOFe\Timer\libs\_c87c4067e73f0edd\SOFe\AwaitGenerator\Await;
+use SOFe\Timer\libs\_c87c4067e73f0edd\SOFe\Zleep\Zleep;
 use WeakMap;
 use function count;
 use function floor;
@@ -50,10 +51,10 @@ final class MainClass extends PluginBase {
 					$session->reset();
 					break;
 				case "show":
-					$session->display = true;
+					$session->show();
 					break;
 				case "hide":
-					$session->display = false;
+					$session->hide();
 					break;
 				default:
 					$sender->sendMessage(TextFormat::RED . "Unknown subcommand \"$subcmd\"");

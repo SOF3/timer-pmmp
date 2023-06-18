@@ -20,10 +20,13 @@
 
 declare(strict_types=1);
 
-namespace SOFe\Timer\libs\_4be245d68119d1a7\SOFe\AwaitGenerator;
+namespace SOFe\Timer\libs\_c87c4067e73f0edd\SOFe\AwaitGenerator;
 
-use RuntimeException;
-
-class AwaitException extends RuntimeException{
-
+/**
+ * @template T
+ * @internal
+ */
+final class ReceivingChannelState{
+	/** @var list<Closure(T): void> */
+	public array $queue = [];
 }
